@@ -1,0 +1,125 @@
+
+* { 
+  margin:0; 
+  padding:0; 
+  box-sizing:border-box; 
+  font-family: 'Inter', sans-serif; 
+}
+
+body {
+  background: #7A0CFF;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 390px;
+  background: #7A0CFF;
+  min-height: 100vh;
+  padding: 32px 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 120px;
+  height: 120px;
+  background: white;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 28px;
+  color: white;
+}
+
+.subtitle {
+  color: rgba(255,255,255,0.6);
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 6px;
+  margin-bottom: 20px;
+}
+.subtitle strong { color: white; }
+
+.input-box {
+  background: #4B1FA7;
+  border: 1px solid rgba(255,255,255,0.5);
+  border-radius: 8px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  margin-bottom: 10px;
+}
+
+.input-box .icon { color: white; font-size: 14px; }
+
+.input-box input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  width: 100%;
+  margin-left: 8px;
+  font-size: 14px;
+}
+.input-box input::placeholder { color: rgba(255,255,255,0.8); }
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0 16px;
+  font-size: 11px;
+}
+.options label { 
+  color: rgba(255,255,255,0.7); 
+  display:flex; 
+  align-items:center; 
+  gap:6px; 
+}
+.options a { 
+  color: rgba(255,255,255,0.6); 
+  text-decoration: underline; 
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  flex: 1;
+  height: 38px;
+  border-radius: 8px;
+  border: 1px solid white;
+  background: #5A2AC0;
+  color: rgba(255,255,255,0.8);
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+}
+.btn:hover { background: #6D3AD6; }
+
+.personagem {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  max-width: 340px;
+  z-index: 2;
+}
+.personagem img {
+  width: 100%;
+  display: block;
+}
